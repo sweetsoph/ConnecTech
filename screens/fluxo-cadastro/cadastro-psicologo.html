@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles/style.css" />
+    <link rel="stylesheet" href="../../assets/styles/cadastro.css" />
+    <link rel="icon" type="imagem/png" href="../../assets/images/favicon.ico" />
+    <title>Mentalize - Cadastro</title>
+</head>
+
+<body>
+    <main>
+        <section class="gradient">
+        </section>
+        <section class="cadastro-container">
+            <form>
+                <h3>Cadastro</h3>
+                <p>Seja bem-vindo ao Mentalize, o serviço de consultas psicológicas do município de Mongaguá. Essa é a
+                    área de cadastro geral, preencha os dados abaixo e continue o cadastro para se tornar um de nós.</p>
+                <input type="text" placeholder="Nome" name="nome" />
+                <input type="text" placeholder="E-mail" name="email" />
+                <input type="date" placeholder="Data de Nasc." name="dt_nasc" />
+                <input type="number" placeholder="Telefone" name="telefone" />
+                <p>Como você quer se cadastrar no nosso site?</p>
+                <select>
+                    <option value="graduando">Pessoa a ser consultada</option>
+                    <option value="formado">Psicólogo</option>
+                </select>
+                <select>
+                    <option value="graduando">Graduando Estagiário Voluntário</option>
+                    <option value="formado">Especializado Voluntário</option>
+                </select>
+                
+                <div class="select-container">
+                    <div class="select-group">
+                        <p>Grupos que pretende atender</p>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="grupo-alvo" id="adolescentes">
+                            <p>Adolescentes</p>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="grupo-alvo" id="adulto">
+                            <p>Adultos</p>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="grupo-alvo" id="idosos">
+                            <p>Idosos</p>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="grupo-alvo" id="perinatal">
+                            <p>Pessoas grávidas ou com dificuldades familiares</p>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="grupo-alvo" id="adicto-drogas">
+                            <p>Adicto em drogas</p>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="grupo-alvo" id="adicto-alcool">
+                            <p>Adicto em álcool</p>
+                        </div>
+                    </div>
+                    <div class="select-group">
+                        <p>Plataforma para atendimento</p>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="plataforma-atuacao" id="adolescentes">
+                            <p>Hangouts</p>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="plataforma-atuacao" id="adulto">
+                            <p>Meet</p>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="plataforma-atuacao" id="adulto">
+                            <p>WhatsApp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button class="btn-voltar">
+                        <p>Voltar</p>
+                    </button><button class="btn-proximo">
+                        <p>Próximo</p>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

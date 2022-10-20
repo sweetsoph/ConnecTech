@@ -7,9 +7,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
     <link rel="icon" type="imagem/png" href="../assets/images/favicon.ico" />
-    <title>Página Inicial</title>
+    <title>Mentalize</title>
   </head>
   <body>
     <header>
@@ -20,6 +20,7 @@
       <section class="header-right">
         <nav>
           <ul>
+            <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#participe">Participe</a></li>
             <li><a href="#contato">Contato</a></li>
@@ -28,7 +29,7 @@
         <button class="btn-entrar">
           <p>Entrar</p>
         </button>
-        <button class="btn-cadastrar">
+        <button class="btn-cadastrar" onclick="location.href ='fluxo-cadastro/cadastro-psicologo.html'">
           <p>Cadastrar</p>
         </button>
       </section>
@@ -105,6 +106,40 @@
         </article>
         <article class="psychologue">
           <img src="../assets/images/psychologue.png" />
+        </article>
+      </section>
+      <section id="contato">
+        <article>
+          <h3>Contato</h3>
+          <aside>
+            <div class="contato-img">
+              <img src="../assets/images/email-icon.png">
+            </div>
+            <div>
+              <p><a>connectech@gmail.com</a></p>
+              <p><a>connectech.ouvidoria@gmail.com</a></p>
+            </div>
+          </aside>
+          <aside>
+            <div class="contato-img">
+              <img src="../assets/images/phone-icon.png">
+            </div>
+            <div>
+              <p>13 99623-6818</p>
+              <p>13 99671-9387</p>
+            </div>
+          </aside>
+          <aside>
+            <div class="contato-img">
+              <img src="../assets/images/instagram-icon.png">
+            </div>
+            <div>
+              <p><a>@connectech.mongagua</a></p>
+            </div>
+          </aside>
+        </article>
+        <article class="self-care">
+          <img src="../assets/images/self-care.png">
         </article>
       </section>
     </main>
