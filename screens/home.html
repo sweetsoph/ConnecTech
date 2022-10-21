@@ -12,7 +12,7 @@
     <title>Mentalize</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <section class="header-left">
         <img src="../assets/images/connectech-branca.png" width="70" />
         <p>Mentalize</p>
@@ -26,14 +26,41 @@
             <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
-        <button class="btn-entrar">
+        <button class="btn-entrar" onclick="location.href='login.html'">
           <p>Entrar</p>
         </button>
-        <button class="btn-cadastrar" onclick="location.href ='fluxo-cadastro/cadastro-psicologo.html'">
+        <!-- location.href ='fluxo-cadastro/cadastro-psicologo.html'; -->
+        <button
+          class="btn-cadastrar"
+          onclick="document.getElementById('modal-cadastro').style.display='flex';"
+        >
           <p>Cadastrar</p>
         </button>
       </section>
     </header>
+    <div id="modal-cadastro">
+      <div class="modal-container">
+        <header>
+          <span></span>
+          <h2>Cadastro</h2>
+          <img
+            onclick="document.getElementById('modal-cadastro').style.display='none'"
+            class="w3-button w3-display-topright"
+            src="../assets/images/close-round-icon.png"
+          />
+        </header>
+        <div class="modal-content">
+          <p>
+            Você deseja fazer cadastro no nosso site como um cliente, que vai
+            receber suas consultas, ou como um psicólogo?
+          </p>
+        </div>
+        <div class="cadastro-buttons">
+          <button class="botao-primario" onclick="location.href='cadastro-cliente.html'">Continuar como Cliente</button>
+          <button class="botao-secundario" onclick="location.href='cadastro-psicologo.html'">Continuar como Psicólogo</button>
+        </div>
+      </div>
+    </div>
     <main>
       <section id="inicio">
         <article>
@@ -98,10 +125,10 @@
             perguntas referentes à preferência de clientes e suas qualificações.
           </p>
           <div>
-            <button class="btn-cadastrar-2">
+            <button class="btn-cadastrar-2" onclick="document.getElementById('modal-cadastro').style.display='flex';">
               <p>Cadastrar</p>
             </button>
-            <a href="">Já possuo conta</a>
+            <a href="login.html">Já possuo conta</a>
           </div>
         </article>
         <article class="psychologue">
@@ -113,7 +140,7 @@
           <h3>Contato</h3>
           <aside>
             <div class="contato-img">
-              <img src="../assets/images/email-icon.png">
+              <img src="../assets/images/email-icon.png" />
             </div>
             <div>
               <p><a>connectech@gmail.com</a></p>
@@ -122,7 +149,7 @@
           </aside>
           <aside>
             <div class="contato-img">
-              <img src="../assets/images/phone-icon.png">
+              <img src="../assets/images/phone-icon.png" />
             </div>
             <div>
               <p>13 99623-6818</p>
@@ -131,7 +158,7 @@
           </aside>
           <aside>
             <div class="contato-img">
-              <img src="../assets/images/instagram-icon.png">
+              <img src="../assets/images/instagram-icon.png" />
             </div>
             <div>
               <p><a>@connectech.mongagua</a></p>
@@ -139,7 +166,7 @@
           </aside>
         </article>
         <article class="self-care">
-          <img src="../assets/images/self-care.png">
+          <img src="../assets/images/self-care.png" />
         </article>
       </section>
     </main>

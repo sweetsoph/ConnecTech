@@ -5,9 +5,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../../assets/styles/style.css" />
-    <link rel="stylesheet" href="../../assets/styles/cadastro.css" />
-    <link rel="icon" type="imagem/png" href="../../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/cadastro.css" />
+    <link rel="icon" type="imagem/png" href="../assets/images/favicon.ico" />
     <title>Mentalize - Cadastro</title>
 </head>
 
@@ -16,7 +16,7 @@
         <section class="gradient">
         </section>
         <section class="cadastro-container">
-            <form>
+            <article>
                 <h3>Cadastro</h3>
                 <p>Seja bem-vindo ao Mentalize, o serviço de consultas psicológicas do município de Mongaguá. Essa é a
                     área de cadastro geral, preencha os dados abaixo e continue o cadastro para se tornar um de nós.</p>
@@ -24,16 +24,13 @@
                 <input type="text" placeholder="E-mail" name="email" />
                 <input type="date" placeholder="Data de Nasc." name="dt_nasc" />
                 <input type="number" placeholder="Telefone" name="telefone" />
-                <p>Como você quer se cadastrar no nosso site?</p>
-                <select>
-                    <option value="graduando">Pessoa a ser consultada</option>
-                    <option value="formado">Psicólogo</option>
+                <p>Em qual das especificações você se encaixa?</p>
+                <select id="'formacao">
+                    <option class="formacao" value="graduando">Graduando Estagiário Voluntário</option>
+                    <option class="formacao" value="formado">Especializado Voluntário</option>
                 </select>
-                <select>
-                    <option value="graduando">Graduando Estagiário Voluntário</option>
-                    <option value="formado">Especializado Voluntário</option>
-                </select>
-                
+                <input class='crp' type="text" placeholder="CRP" name="crp">
+                <input class='declaracao-matricula' type="text" placeholder="Declaração de Matrícula" name="declaracao-matricula">
                 <div class="select-container">
                     <div class="select-group">
                         <p>Grupos que pretende atender</p>
@@ -81,13 +78,23 @@
                 <div class="button-group">
                     <button class="btn-voltar">
                         <p>Voltar</p>
-                    </button><button class="btn-proximo">
-                        <p>Próximo</p>
+                    </button><button class="btn-enviar" onclick="location.href='tela-inicial-psicologo.html'">
+                        <p>Enviar</p>
                     </button>
                 </div>
-            </form>
+            </article>
         </section>
     </main>
+    <script type="text/javascript">
+        var select = document.querySelector('#formacao');
+        console.log(select);
+        if(select.value == 'graduando'){
+            document.querySelector('.declaracao-matricula').style.display = 'flex';
+        }
+        else if(select.value == 'formado'){
+            document.querySelector('.declaracao-matricula').style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
