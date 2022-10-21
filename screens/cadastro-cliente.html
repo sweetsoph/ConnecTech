@@ -17,12 +17,12 @@
     <main>
       <section class="gradient"></section>
       <section class="cadastro-container">
-        <article>
+        <form action="tela-inicial-cliente.html">
           <h3>Cadastro Cliente</h3>
-          <input type="text" placeholder="Nome" name="nome" />
-          <input type="text" placeholder="E-mail" name="email" />
-          <input type="date" placeholder="Data de Nasc." name="dt_nasc" />
-          <input type="number" placeholder="Telefone" name="telefone" />
+          <input type="text" placeholder="Nome" name="nome" required/>
+          <input type="text" placeholder="E-mail" name="email" required/>
+          <input type="date" placeholder="Data de Nasc." name="dt_nasc" required/>
+          <input type="number" placeholder="Telefone" name="telefone" required/>
           <div class="select-group">
             <p>Como você se classifica nas categorias abaixo?</p>
             <div class="checkbox-group">
@@ -50,8 +50,8 @@
               <p>Adicto em álcool</p>
             </div>
           </div>
-          <input name="senha" placeholder="Senha" type="password" />
-          <input
+          <input name="senha" placeholder="Senha" type="password" required/>
+          <input required
             name="confirmar-senha"
             placeholder="Confirmar Senha"
             type="password"
@@ -59,13 +59,15 @@
           <div class="button-group">
             <button class="btn-voltar" onclick="location.href='../index.html'">
               <p>Voltar</p></button
-            ><button
+            >
+            <button
               class="btn-enviar"
+              type="submit"
             >
               <p>Enviar</p>
             </button>
           </div>
-        </article>
+        </form>
       </section>
     </main>
     <script type="text/javascript">
@@ -77,7 +79,6 @@
                 event.preventDefault();
                 alert('As senhas não conferem');
             }else{
-              location.href='tela-inicial-cliente.html';
             }
         });
     </script>

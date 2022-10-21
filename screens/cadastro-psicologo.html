@@ -16,14 +16,14 @@
         <section class="gradient">
         </section>
         <section class="cadastro-container">
-            <article>
+            <form action="tela-inicial-psicologo.html">
                 <h3>Cadastro</h3>
                 <p>Seja bem-vindo ao Mentalize, o serviço de consultas psicológicas do município de Mongaguá. Essa é a
                     área de cadastro geral, preencha os dados abaixo e continue o cadastro para se tornar um de nós.</p>
-                <input type="text" placeholder="Nome" name="nome" />
-                <input type="text" placeholder="E-mail" name="email" />
-                <input type="date" placeholder="Data de Nasc." name="dt_nasc" />
-                <input type="number" placeholder="Telefone" name="telefone" />
+                <input type="text" placeholder="Nome" name="nome" required/>
+                <input type="text" placeholder="E-mail" name="email" required/>
+                <input type="date" placeholder="Data de Nasc." name="dt_nasc" required/>
+                <input type="number" placeholder="Telefone" name="telefone" required/>
                 <p>Em qual das especificações você se encaixa?</p>
                 <select id="'formacao">
                     <option class="formacao" value="graduando">Graduando Estagiário Voluntário</option>
@@ -82,7 +82,7 @@
                         <p>Enviar</p>
                     </button>
                 </div>
-            </article>
+            </form>
         </section>
     </main>
     <script type="text/javascript">

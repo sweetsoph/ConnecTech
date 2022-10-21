@@ -21,7 +21,7 @@ main {
     width: 100vw;
     min-width: 300px;
 }
-article{
+form{
     background-color: #fcfcfc;
     border-radius: 20px;
     display: flex;
@@ -31,17 +31,17 @@ article{
     min-width: 300px;
     margin: 0 calc(70vw - 62vw);
 }
-article h3{
+form h3{
     margin-bottom: 40px;
 }
-article input{
+form input{
     font-size: 18px;
     margin: 10px 0;
     border: #5CA4A7 1px solid;
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
 }
-article input:focus{
+form input:focus{
     outline: none;
     border: #5CA4A7 2px solid;
 }
