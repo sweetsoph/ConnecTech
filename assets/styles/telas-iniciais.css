@@ -1,28 +1,37 @@
-/* header {
-  background-color: #41bfc4;
-  height: 70px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.principal {
+  padding-top: 80px;
+  margin-left: 10%;
   flex-direction: column;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  overflow: hidden;
 }
-header section,
-header nav {
+
+.especialistas {
+  border: 2px solid;
+  border-color: #21e9f1;
+  border-radius: 60px;
+  margin-bottom: 15px;
+  width: 70%;
   display: flex;
-} */
-.active{
-    color: #f49197;
-    font-weight: 600;
+}
+.especialistas img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.especialistas h4 {
+  margin-left: 25%;
+  color: #41bfc4;
+}
+
+h2 {
+  color: #1e8285;
+  text-decoration: underline #62c3c6;
+}
+#icon-user {
+}
+.active {
+  color: #f49197;
+  font-weight: 600;
 }
 a:hover {
   cursor: pointer;
@@ -111,18 +120,18 @@ main {
   flex-direction: column;
   padding: 20px;
 }
-.profile-content .group{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
+.profile-content .group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 }
-.group div{
-    display: flex;
-    align-items: center;
+.group div {
+  display: flex;
+  align-items: center;
 }
-.group div img{
-    margin-right: 10px;
+.group div img {
+  margin-right: 10px;
 }
 .home-content {
   padding: 40px;
@@ -166,8 +175,8 @@ main {
   width: 90%;
   justify-content: space-between;
 }
-h3{
-    text-align: center;
+h3 {
+  text-align: center;
 }
 h4 {
   font-size: 20px;

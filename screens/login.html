@@ -8,22 +8,31 @@
     <link rel="stylesheet" href="../assets/styles/login.css" />
     <title>Mentalize - Login</title>
 </head>
-
 <body>
-    <main>
-        <section class="gradient">    
-        </section>
-        <section class="login-container">
-            <article>
-                <h3>Login</h3>
-                <input type="text" name="email" placeholder="E-mail" />
-                <input type="password" name="senha" placeholder="Senha" />
-                <div class="button-group">
-                    
-                </div>
-            </article>
-        </section>
-    </main>
-    
+    <section class="gradient"></section>
+        <div class="box">
+            <h1>Mentalize</h1>
+            <br>
+            <h3>Login</h3>
+            <div class="inputBox">
+                <input type="text" name="email" placeholder="E-mail" class="inputUser" />
+            </div>
+            <br><br><br>
+            <div class="inputBox">
+                <input type="password" name="senha" placeholder="Senha" class="inputUser"/>
+            </div>
+            <br><br><br>
+            <a href="#">Esqueceu sua senha?</a>
+            <br><br>
+            <div class="button-group">
+                <button class="btn-voltar" onclick="location.href='home.html'">
+                    <p>Voltar</p>
+                </button>
+                <button class="btn-entrar" onclick="location.href='tela-inicial-cliente.html'">
+                    <p>Entrar</p>
+                </button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,62 +1,105 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../assets/styles/style.css" />
-    <link rel="stylesheet" href="../assets/styles/telas-iniciais.css" />
-    <link rel="icon" type="imagem/png" href="../assets/images/favicon.ico" />
-    <title>Tela Inicial</title>
-  </head>
 
-  <body>
-    <header>
-      <section>
-        <img src="../assets/images/connectech-branca.png" width="70" />
-        <p>Mentalize</p>
-      </section>
-      <nav class="navbar">
+<head>
+  <meta charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/../assets/styles/style.css" />
+  <link rel="stylesheet" href="../assets/styles/telas-iniciais.css" />
+  <link rel="icon" type="imagem/png" href="../assets/images/favicon.ico" />
+
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <title>Tela Inicial</title>
+</head>
+
+<body>
+  <header id="header">
+    <section class="header-left">
+      <img src="../assets/images/connectech-branca.png" width="70" />
+      <p>Mentalize</p>
+    </section>
+    <section class="header-right">
+      <nav>
         <ul>
-          <li>Sair</li>
-          <li>Home</li>
-          <li>Sobre</li>
-          <li>Encontrar</li>
-          <li>Meu Perfil</li>
+          <li>
+            <a
+              onclick="document.getElementById('modal-sair').style.display='flex';"
+              >Sair</a
+            >
+          </li>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">Minhas consultas</a></li>
+          <li><a href="">Meu Perfil</a></li>
+          <li><a href="">Sobre</a></li>
         </ul>
       </nav>
-    </header>
- 
-    <div>
-
+    </section>
+  </header>
+  <div id="modal-sair">
+    <div class="sair-container">
+      <header>
+        <h2>Sair</h2>
+      </header>
+      <div class="sair-content">
+        <p>Você tem certeza de que deseja sair do site?</p>
+      </div>
+      <div class="sair-buttons">
+        <button
+          class="botao-secundario"
+          onclick="document.getElementById('modal-sair').style.display='none';"
+        >
+          Cancelar
+        </button>
+        <button class="botao-primario" onclick="location.href='home.html'">
+          Sair
+        </button>
+      </div>
+    </div>
+  </div>
+  <main class="principal">
+    <h2> Especialistas</h2>
+    <div class="especialistas">
+      <img src="https://api-private.atlassian.com/users/3ed7bde5a8c78e8d0d38eca297f62495/avatar" width="110px" id="icon-user">
       <div>
-        <img src="" />
         <h4>Nome:</h4>
-        <h4>Atendimento:</h4>
-        <h4>Descrição:</h4>
+        <!-- <p>Raquel Alves da Silva</p> -->
+        <h4>Atendimento: </h4>
+        <!-- <p>Adolescentes, Adultos, Adictos</p> -->
+        <h4>Descrição: </h4>
+        <!-- <p>Eu fico muito feliz em ajudar as pessoas a identificar e alcançar
+        seus objetivos pessoais ao lidarem com as questões que estão
+        causando angústia, ansiedade e estresse. Falta tão pouco para que eu
+        me forme, e adoraria praticar ajudando outras pessoas que precisam
+        desse suporte.</p> -->
         <h4>Contato:</h4>
       </div>
-
-      <div>
-        <img src="" />
-        <h4>Nome:</h4>
-        <h4>Atendimento:</h4>
-        <h4>Descrição:</h4>
-        <h4>Contato:</h4>
-      </div>
-
-      <div>
-        <img src="" />
-        <h4>Nome:</h4>
-        <h4>Atendimento:</h4>
-        <h4>Descrição:</h4>
-        <h4>Contato:</h4>
-      </div>
-
     </div>
 
-  </body>
+    <div class="especialistas">
+      <img src="https://api-private.atlassian.com/users/3ed7bde5a8c78e8d0d38eca297f62495/avatar" width="110px" id="icon-user">
+      <!-- icone-->
+      <div>
+        <h4>Nome:</h4>
+        <h4>Atendimento:</h4>
+        <h4>Descrição:</h4>
+        <h4>Contato:</h4>
+      </div>
+    </div>
+
+    <div class="especialistas">
+      <img src="https://api-private.atlassian.com/users/3ed7bde5a8c78e8d0d38eca297f62495/avatar" width="110px" id="icon-user">
+      <!-- icone-->
+      <div>
+        <h4>Nome:</h4>
+        <h4>Atendimento:</h4>
+        <h4>Descrição:</h4>
+        <h4>Contato:</h4>
+      </div>
+    </main>
+</body>
+
 </html>

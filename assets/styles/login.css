@@ -1,50 +1,45 @@
-main {
-    background-image: linear-gradient(180deg, #5CA4A7 0%, rgba(45, 225, 232, 0.66) 86.46%);
-    display: flex;
-    height: 100%;
-    width: 100vw;
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 27%;
+    color: white;
+    z-index: 0;
 }
-
 .gradient {
     background-image: linear-gradient(180deg, #5CA4A7 0%, rgba(45, 225, 232, 0.66) 86.46%);
     min-height: 100%;
-    width: 30vw;
-    min-width: 500px;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
+    min-width: 100%;
     position: fixed;
 }
-.login-container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100vw;
-    min-width: 300px;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+.box h1{
+    background-image: linear-gradient(to bottom, #21E9F1, #C8FAFC, #D9D9D9);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
-article{
-    background-color: #fcfcfc;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    width: 40%;
-    min-width: 300px;
-    margin: 0 calc(70vw - 62vw);
+.box h3{
+    margin-bottom: 30px;
+    text-align: center;
 }
-article h3{
-    margin-bottom: 40px;
+.inputBox{
+    position: absolute;
+    left: 20%;
 }
-article input{
+.inputUser{
     font-size: 18px;
     margin: 10px 0;
-    border: #5CA4A7 1px solid;
+    border: #5CA4A7 2px solid;
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
 }
-article input:focus{
+.inputUser:focus{
     outline: none;
     border: #5CA4A7 2px solid;
 }
@@ -77,15 +72,24 @@ article input:focus{
     border: 2px solid #41bfc4;
     border-radius: 10px;
 }
-.btn-enviar{
+.btn-voltar:hover{
+    background-color: #41bfc4;
+    color: #fcfcfc;
+}
+.btn-entrar{
     background-color: #41bfc4;
     color: #fcfcfc;
     border: 2px solid #41bfc4;
     border-radius: 10px;
 }
-@media(max-width: 1000px){
-    .gradient{
-        display: none;
-    }
-        
-    }
+.btn-entrar:hover{
+    background-color: #fcfcfc;
+    color: #5CA4A7;
+}
+.box a{
+    position: absolute;
+    left: 28%;
+    letter-spacing: 1px;
+    color: #fcfcfc;
+    text-decoration: none;
+}
